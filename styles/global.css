@@ -1,6 +1,6 @@
 :root {
     --background: rgb(224, 234, 247);
-    --header-background: white;
+    --header-background: rgb(190, 134, 134);
     --footer-background: rgb(243, 242, 242);
 }
 
@@ -28,8 +28,31 @@ footer {
     position: sticky;
     bottom: 0;
     padding: 7px 20px;
-    font-size: .8em;
+    font-size: 0.8em;
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+h1 {
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    float: right;
+    width: 22.5%;
+    height: 100vh;
+    padding-top: 3in;
+}
+
+#row {
+    content: '';
+    clear: both;
+    display: table;
+    height: 100vh;
+}
+
+.addias {
+    float: left;
 }

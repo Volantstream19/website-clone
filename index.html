@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
-</head>
-
-<body>
-    <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap"
+        />
+        <link rel="stylesheet" href="/styles/reset.css" />
+        <link rel="stylesheet" href="/styles/global.css" />
+        <title>Web App</title>
+    </head>
+    <header id="header-height">
+        <div id="header"> <img id="addias"
+            src="data:image/png;base64,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"
+            /></div>
+        <div id="p"></div>
+        <h1 id="sale">Fall Layers Start At 25$</h1>
     </header>
 
-    <main>
+    <body>
+        <section>
+            <div id="essentials"></div>
+        </section>
+        <div id="container"></div>
+            <div id="Body">
+                <div class="row">
+                    <div class="column">
+                      <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/fw22-ncaa-ub-tc_tcm221-935827.jpg" height="200" width ="200"style="float:left">
+                    </div>
+                    <div class="column">
+                      <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/BB5487_FW22-gazelle-sept-hp-teaser-carousel_tcm221-935825.jpg"height="200" width ="200" >
+                    </div>
+                    <div class="column">
+                      <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/fw22_fmf-away-jerseys-dual-tcc_tcm221-935823.jpg" height="400" width ="350">
+                    </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        
 
-    </main>
+        <main></main>
 
-    <footer>&copy;2022 Software Developer</footer>
+        <footer>&copy;2022 Software Developer</footer>
 
-    <script type="module" src="app.js"></script>
-</body>
-
+        <script type="module" src="app.js"></script>
+    </body>
 </html>
